@@ -52,10 +52,11 @@ const config: Config = {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
-        carneros: {
-          wine: "#8B0000",
+        brand: {
+          blue: "#0b55ad",
+          gray: "#5b5b5b",
           black: "#000000",
-          gold: "#D4AF37",
+          white: "#ffffff",
         },
       },
       fontFamily: {

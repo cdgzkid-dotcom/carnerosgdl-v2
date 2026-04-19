@@ -69,7 +69,7 @@ async function sendEmails(data: {
     subject: "Inscripción recibida — Carneros Football Club",
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto;">
-        <h1 style="color: #8B0000;">¡Bienvenido a Carneros!</h1>
+        <h1 style="color: #0b55ad;">¡Bienvenido a Carneros!</h1>
         <p>Hola ${data.parent_name},</p>
         <p>Recibimos la inscripción de <strong>${data.player_name}</strong> para la categoría <strong>${data.category}</strong>.</p>
         <p>Un coordinador te contactará dentro de las próximas 48 horas para confirmar detalles y darte la bienvenida al club.</p>

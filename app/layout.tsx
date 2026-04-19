@@ -110,7 +110,12 @@ export default function RootLayout({
   return (
     <html lang="es-MX" suppressHydrationWarning>
       <body className={`${inter.variable} ${oswald.variable} font-sans antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem={false}
+          disableTransitionOnChange
+        >
           <div className="relative flex min-h-screen flex-col">
             <Navbar />
             <main className="flex-1">{children}</main>

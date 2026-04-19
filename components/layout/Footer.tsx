@@ -18,13 +18,13 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-16 border-t border-border bg-secondary text-secondary-foreground">
+    <footer className="mt-16 border-t border-border bg-background text-foreground">
       <div className="container mx-auto grid gap-10 px-4 py-12 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
           <p className="font-display text-3xl font-bold uppercase tracking-wider">
             <span className="text-primary">Carneros</span> Football Club
           </p>
-          <p className="mt-3 max-w-md text-sm text-secondary-foreground/70">
+          <p className="mt-3 max-w-md text-sm text-muted-foreground">
             {CONTACTS.organization.tagline}. Formando atletas y líderes desde{" "}
             {CONTACTS.organization.founded} en Guadalajara.
           </p>
@@ -34,7 +34,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook Carneros"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary-foreground/10 transition-colors hover:bg-primary hover:text-primary-foreground"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-muted transition-colors hover:bg-primary hover:text-primary-foreground"
             >
               <FacebookIcon className="h-5 w-5" />
             </a>
@@ -43,7 +43,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram Carneros"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary-foreground/10 transition-colors hover:bg-primary hover:text-primary-foreground"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-muted transition-colors hover:bg-primary hover:text-primary-foreground"
             >
               <InstagramIcon className="h-5 w-5" />
             </a>
@@ -52,7 +52,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="TikTok Carneros"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary-foreground/10 transition-colors hover:bg-primary hover:text-primary-foreground"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-muted transition-colors hover:bg-primary hover:text-primary-foreground"
             >
               <TikTokIcon className="h-5 w-5" />
             </a>
@@ -68,7 +68,7 @@ export function Footer() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="text-secondary-foreground/70 transition-colors hover:text-primary"
+                  className="text-muted-foreground transition-colors hover:text-primary"
                 >
                   {link.label}
                 </Link>
@@ -79,7 +79,7 @@ export function Footer() {
 
         <div>
           <h3 className="font-display text-lg font-semibold uppercase tracking-wider">Contacto</h3>
-          <ul className="mt-3 space-y-2 text-sm text-secondary-foreground/70">
+          <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
             <li>
               <a
                 href={CONTACTS.whatsapp.general}
@@ -123,8 +123,8 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-secondary-foreground/10 py-5">
-        <div className="container mx-auto flex flex-col items-center justify-between gap-2 px-4 text-xs text-secondary-foreground/60 sm:flex-row sm:px-6 lg:px-8">
+      <div className="border-t border-border py-5">
+        <div className="container mx-auto flex flex-col items-center justify-between gap-2 px-4 text-xs text-muted-foreground sm:flex-row sm:px-6 lg:px-8">
           <p>
             © {year} {CONTACTS.organization.legalName}. Todos los derechos reservados.
           </p>
