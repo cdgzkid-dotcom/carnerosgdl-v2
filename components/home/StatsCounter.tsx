@@ -16,7 +16,7 @@ export function StatsCounter() {
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--accent)/0.15),transparent_60%)]"
+        className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.08),transparent_60%)]"
       />
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -26,8 +26,8 @@ export function StatsCounter() {
           transition={{ duration: 0.5 }}
           className="mx-auto max-w-2xl text-center"
         >
-          <p className="text-sm font-semibold uppercase tracking-widest text-accent">
-            39 años de trayectoria
+          <p className="text-sm font-semibold uppercase tracking-widest text-secondary-foreground/70">
+            Nuestra historia en números
           </p>
           <h2 className="mt-3 font-display text-4xl font-bold uppercase tracking-tight md:text-5xl lg:text-6xl">
             Nuestros Logros
@@ -45,9 +45,9 @@ export function StatsCounter() {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group flex flex-col items-center rounded-lg border border-accent/20 bg-secondary-foreground/5 p-6 text-center backdrop-blur-sm transition-all hover:border-accent/60 hover:bg-secondary-foreground/10"
+              className="group flex flex-col items-center rounded-lg border border-white/15 bg-white/5 p-6 text-center backdrop-blur-sm transition-all hover:border-white/40 hover:bg-white/10"
             >
-              <span className="font-display text-5xl font-bold text-accent md:text-6xl">
+              <span className="font-display text-5xl font-bold text-white md:text-6xl">
                 {inView ? <CountUp end={stat.value} duration={2} separator="," /> : 0}
               </span>
               <span className="mt-2 text-xs font-semibold uppercase tracking-widest text-secondary-foreground/80 md:text-sm">
@@ -55,6 +55,24 @@ export function StatsCounter() {
               </span>
             </motion.div>
           ))}
+
+          {/* Quinto bloque: badge DESDE 1985 (no es contador, es elemento tipográfico) */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="col-span-2 flex flex-col items-center justify-center rounded-lg border-2 border-white bg-white p-6 text-center shadow-xl md:col-span-1"
+          >
+            <span className="font-display text-[11px] font-semibold uppercase tracking-[0.2em] text-primary/80">
+              Fundado
+            </span>
+            <span className="font-display text-4xl font-bold uppercase tracking-tight text-primary md:text-5xl">
+              Desde
+            </span>
+            <span className="font-display text-5xl font-bold uppercase tracking-tight text-primary md:text-6xl">
+              1985
+            </span>
+          </motion.div>
         </div>
       </div>
     </section>

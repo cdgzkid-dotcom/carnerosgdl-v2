@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FacebookIcon, InstagramIcon, TikTokIcon } from "@/components/shared/SocialIcons";
 import { CONTACTS } from "@/lib/contacts";
 
@@ -21,9 +22,18 @@ export function Footer() {
     <footer className="mt-16 border-t border-border bg-background text-foreground">
       <div className="container mx-auto grid gap-10 px-4 py-12 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
-          <p className="font-display text-3xl font-bold uppercase tracking-wider">
-            <span className="text-primary">Carneros</span> Football Club
-          </p>
+          <div className="flex items-center gap-3">
+            <Image
+              src="/images/logos/logo-mark.png"
+              alt="Logo Carneros"
+              width={56}
+              height={56}
+              className="h-12 w-auto"
+            />
+            <p className="font-display text-3xl font-bold uppercase tracking-wider">
+              <span className="text-primary">Carneros</span>
+            </p>
+          </div>
           <p className="mt-3 max-w-md text-sm text-muted-foreground">
             {CONTACTS.organization.tagline}. Formando atletas y líderes desde{" "}
             {CONTACTS.organization.founded} en Guadalajara.
@@ -87,38 +97,18 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-primary"
               >
-                WhatsApp general
+                WhatsApp: +52 33 4104 2448
               </a>
             </li>
             <li>
-              <a
-                href={CONTACTS.whatsapp.americano}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-primary"
-              >
-                WhatsApp Americano
-              </a>
+              <Link href="/inscripciones" className="transition-colors hover:text-primary">
+                Inscríbete
+              </Link>
             </li>
             <li>
-              <a
-                href={CONTACTS.whatsapp.flag}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-primary"
-              >
-                WhatsApp Flag
-              </a>
-            </li>
-            <li>
-              <a
-                href={CONTACTS.whatsapp.juvenil}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-primary"
-              >
-                WhatsApp Juvenil Única
-              </a>
+              <span>
+                {CONTACTS.location.city}, {CONTACTS.location.state}
+              </span>
             </li>
           </ul>
         </div>
@@ -128,7 +118,7 @@ export function Footer() {
           <p>
             © {year} {CONTACTS.organization.legalName}. Todos los derechos reservados.
           </p>
-          <p>Carneros Football Club Guadalajara — {CONTACTS.organization.founded}</p>
+          <p>Carneros Guadalajara — Desde {CONTACTS.organization.founded}</p>
         </div>
       </div>
     </footer>

@@ -9,7 +9,7 @@ import { CONTACTS } from "@/lib/contacts";
 export const metadata: Metadata = {
   title: "Football Americano",
   description:
-    "Programa de football americano de Carneros FC: seis categorías por edad (Rabbits, Hornets, Irons, Falcons, Tauros, Ponys) más Juvenil Única, de 9 a 18 años.",
+    "Programa de football americano de Carneros: seis categorías por edad (Rabbits, Hornets, Irons, Falcons, Tauros, Ponys) más Juvenil Única, de 9 a 18 años.",
 };
 
 export default function AmericanoPage() {

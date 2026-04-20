@@ -121,9 +121,8 @@ export default function NosotrosPage() {
             <p>
               En total, la organización Carneros ha logrado <strong>57 campeonatos</strong>,{" "}
               <strong>43 subcampeonatos</strong> y <strong>65 terceros lugares</strong> en
-              diferentes categorías durante su destacada trayectoria de <strong>39 años</strong>.
-              ¡Un logro notable que refleja su compromiso y éxito en el mundo del football
-              americano!
+              diferentes categorías <strong>desde su fundación en 1985</strong>. ¡Un logro notable
+              que refleja su compromiso y éxito en el mundo del football americano!
             </p>
             <p>
               Estos logros son aún más destacables al ser una iniciativa social sin presupuesto

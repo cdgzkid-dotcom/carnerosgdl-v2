@@ -14,9 +14,9 @@ export default function InscripcionesPage() {
     <>
       <PageHero
         title="Inscripciones"
-        subtitle="Únete a Carneros FC. Llena el formulario y un coordinador te contactará para darte la bienvenida al club."
+        subtitle="Únete a Carneros. Llena el formulario y un coordinador te contactará para darte la bienvenida al club."
         image={HERO_IMAGES.americano}
-        imageAlt="Inscripciones Carneros FC"
+        imageAlt="Inscripciones Carneros"
         height="sm"
       />
       <section className="py-16 md:py-20">

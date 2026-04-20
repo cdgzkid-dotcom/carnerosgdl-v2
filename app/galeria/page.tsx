@@ -16,7 +16,7 @@ export default function GaleriaPage() {
         title="Galería"
         subtitle="Vive los mejores momentos del club: entrenamientos, partidos, celebraciones y vida de equipo."
         image={HERO_IMAGES.home}
-        imageAlt="Galería Carneros FC"
+        imageAlt="Galería Carneros"
         height="sm"
       />
       <section className="py-16 md:py-20">

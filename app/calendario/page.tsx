@@ -57,7 +57,7 @@ export default async function CalendarioPage() {
         title="Calendario"
         subtitle="Todos los partidos de nuestras categorías de football americano y flag, en un solo lugar."
         image={HERO_IMAGES.americano}
-        imageAlt="Calendario de partidos Carneros FC"
+        imageAlt="Calendario de partidos Carneros"
         height="sm"
       />
       <section className="py-16 md:py-20">

@@ -41,12 +41,15 @@ export function Hero() {
         animate="show"
         className="container relative z-10 mx-auto flex flex-col items-center px-4 py-20 text-center sm:px-6 lg:px-8"
       >
-        <motion.div variants={item} className="mb-6">
-          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border-2 border-accent bg-primary shadow-xl md:h-24 md:w-24">
-            <span className="font-display text-3xl font-bold uppercase tracking-wider text-white md:text-4xl">
-              CFC
-            </span>
-          </div>
+        <motion.div variants={item} className="mb-4">
+          <Image
+            src="/images/logos/logo-mark.png"
+            alt="Logo oficial de Carneros"
+            width={160}
+            height={160}
+            priority
+            className="mx-auto h-28 w-auto drop-shadow-2xl md:h-36"
+          />
         </motion.div>
 
         <motion.h1

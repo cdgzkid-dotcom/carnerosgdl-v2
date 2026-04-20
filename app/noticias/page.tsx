@@ -23,7 +23,7 @@ export default async function NoticiasPage() {
         title="Noticias"
         subtitle="Resultados, anuncios y momentos destacados de nuestras categorías."
         image={HERO_IMAGES.home}
-        imageAlt="Noticias Carneros FC"
+        imageAlt="Noticias Carneros"
         height="sm"
       />
       <section className="py-16 md:py-20">

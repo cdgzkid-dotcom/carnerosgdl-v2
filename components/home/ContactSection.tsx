@@ -3,7 +3,7 @@
 import type { ComponentType, SVGProps } from "react";
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
-import { CONTACTS } from "@/lib/contacts";
+import { CONTACTS, WHATSAPP_GENERAL } from "@/lib/contacts";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { FacebookIcon, InstagramIcon, TikTokIcon } from "@/components/shared/SocialIcons";
 
@@ -39,13 +39,6 @@ const SOCIALS: Social[] = [
     Icon: TikTokIcon,
     color: "bg-black",
   },
-  {
-    label: "WhatsApp",
-    href: CONTACTS.whatsapp.general,
-    handle: "+52 33 4104 2448",
-    Icon: MessageCircle,
-    color: "bg-[#25D366]",
-  },
 ];
 
 export function ContactSection() {
@@ -53,12 +46,37 @@ export function ContactSection() {
     <section id="contacto" className="py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
-          eyebrow="Redes sociales"
+          eyebrow="Contacto"
           title="Síguenos y contáctanos"
-          description="Mantente al día con entrenamientos, partidos y novedades del club. Estamos en las redes donde estás tú."
+          description="Escríbenos directo por WhatsApp o síguenos en redes sociales para partidos, entrenamientos y novedades del club."
           align="center"
         />
-        <div className="mx-auto grid max-w-4xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+        {/* Botón principal de WhatsApp — el único */}
+        <div className="mx-auto max-w-xl">
+          <motion.a
+            href={WHATSAPP_GENERAL}
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            whileHover={{ scale: 1.02 }}
+            className="group flex items-center justify-center gap-3 rounded-xl bg-[#25D366] px-8 py-5 text-center text-white shadow-lg transition-all hover:shadow-xl"
+          >
+            <MessageCircle className="h-7 w-7" />
+            <div className="flex flex-col items-start">
+              <span className="text-xs font-semibold uppercase tracking-widest text-white/80">
+                Escríbenos por WhatsApp
+              </span>
+              <span className="font-display text-2xl font-bold uppercase tracking-wide">
+                +52 33 4104 2448
+              </span>
+            </div>
+          </motion.a>
+        </div>
+
+        <div className="mx-auto mt-12 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3">
           {SOCIALS.map((s, i) => (
             <motion.a
               key={s.label}
@@ -70,7 +88,7 @@ export function ContactSection() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
               whileHover={{ scale: 1.04, y: -4 }}
-              className="group flex flex-col items-center rounded-xl bg-card p-6 text-center shadow-md ring-1 ring-border transition-all hover:shadow-xl"
+              className="group flex flex-col items-center rounded-xl bg-card p-6 text-center shadow-md ring-1 ring-border transition-all hover:shadow-xl hover:ring-primary"
             >
               <span
                 className={`mb-4 flex h-14 w-14 items-center justify-center rounded-full text-white shadow-lg ${s.color}`}

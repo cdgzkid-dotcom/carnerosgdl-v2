@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    /* Marca Carneros: #0b55ad (azul) / #5b5b5b (gris) */
+    /* Modo light — fondo blanco, acento azul Carneros #0b55ad */
     --background: 0 0% 100%;
     --foreground: 0 0% 10%;
     --card: 0 0% 100%;
@@ -28,25 +28,26 @@
   }
 
   .dark {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 96%;
-    --card: 0 0% 9%;
-    --card-foreground: 0 0% 96%;
-    --popover: 0 0% 9%;
-    --popover-foreground: 0 0% 96%;
-    --primary: 212 88% 44%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 14%;
-    --secondary-foreground: 0 0% 96%;
-    --muted: 0 0% 14%;
-    --muted-foreground: 0 0% 64%;
-    --accent: 212 88% 50%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 62% 45%;
-    --destructive-foreground: 0 0% 96%;
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 212 88% 50%;
+    /* Modo dark — fondo azul Carneros, acento blanco */
+    --background: 212 88% 36%; /* #0b55ad */
+    --foreground: 0 0% 100%;
+    --card: 213 88% 26%; /* #083d7a — azul más oscuro */
+    --card-foreground: 0 0% 100%;
+    --popover: 213 88% 26%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%; /* blanco como primario/CTA */
+    --primary-foreground: 212 88% 36%;
+    --secondary: 213 88% 22%; /* azul aún más oscuro para sección dramática */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 213 60% 30%; /* azul medio */
+    --muted-foreground: 212 38% 78%; /* azul muy claro casi blanco para texto secundario */
+    --accent: 0 0% 100%; /* blanco como acento */
+    --accent-foreground: 212 88% 36%;
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 212 50% 55%; /* azul medio-claro para divisores */
+    --input: 212 50% 55%;
+    --ring: 0 0% 100%;
   }
 }
 

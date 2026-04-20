@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: "Carneros Football Club Guadalajara",
-    template: "%s | Carneros FC",
+    template: "%s | Carneros",
   },
   description:
     "Carneros Football Club es una institución dedicada al desarrollo integral de jugadores a través del football americano y flag en Guadalajara desde 1985.",
@@ -50,20 +50,11 @@ export const metadata: Metadata = {
     title: "Carneros Football Club Guadalajara",
     description:
       "Football americano y flag football juvenil en Guadalajara desde 1985. Disciplina, trabajo en equipo y superación.",
-    images: [
-      {
-        url: "/og/default.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Carneros Football Club Guadalajara",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Carneros Football Club Guadalajara",
     description: "Football americano y flag football juvenil en Guadalajara desde 1985.",
-    images: ["/og/default.jpg"],
   },
   robots: {
     index: true,
@@ -91,7 +82,7 @@ const jsonLd = {
   alternateName: CONTACTS.organization.shortName,
   foundingDate: CONTACTS.organization.founded,
   url: siteUrl,
-  logo: `${siteUrl}/images/logo.png`,
+  logo: `${siteUrl}/images/logos/logo-mark.png`,
   sameAs: [CONTACTS.social.facebook, CONTACTS.social.instagram, CONTACTS.social.tiktok],
   address: {
     "@type": "PostalAddress",

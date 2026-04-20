@@ -155,6 +155,5 @@ export const ACHIEVEMENTS = [
   { label: "Campeonatos", value: 57 },
   { label: "Subcampeonatos", value: 43 },
   { label: "Terceros lugares", value: 65 },
-  { label: "Años de historia", value: 39 },
   { label: "Categorías", value: 7 },
 ] as const;

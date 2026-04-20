@@ -8,7 +8,7 @@ import { CONTACTS } from "@/lib/contacts";
 export const metadata: Metadata = {
   title: "Flag Football",
   description:
-    "Programa de flag football Carneros FC: seis categorías desde los 4 hasta los 15+ años. Deporte sin contacto que desarrolla agilidad y estrategia.",
+    "Programa de flag football Carneros: seis categorías desde los 4 hasta los 15+ años. Deporte sin contacto que desarrolla agilidad y estrategia.",
 };
 
 export default function FlagPage() {

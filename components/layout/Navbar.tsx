@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -48,11 +49,20 @@ export function Navbar() {
       <nav className="container mx-auto flex h-16 items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="flex items-center gap-2 font-display text-2xl font-bold uppercase tracking-wider text-foreground"
-          aria-label="Carneros FC — inicio"
+          className="flex items-center gap-3 text-foreground"
+          aria-label="Carneros — inicio"
         >
-          <span className="text-primary">Carneros</span>
-          <span className="hidden text-sm font-normal text-muted-foreground md:inline">FC</span>
+          <Image
+            src="/images/logos/logo-mark.png"
+            alt="Logo Carneros"
+            width={48}
+            height={48}
+            priority
+            className="h-10 w-auto"
+          />
+          <span className="font-display text-2xl font-bold uppercase tracking-wider text-foreground">
+            Carneros
+          </span>
         </Link>
 
         <ul className="hidden items-center gap-1 xl:flex">

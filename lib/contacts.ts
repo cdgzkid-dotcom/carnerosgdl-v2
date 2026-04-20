@@ -1,9 +1,11 @@
+export const WHATSAPP_GENERAL = "https://wa.me/523341042448";
+
 export const CONTACTS = {
   whatsapp: {
     americano: "https://wa.me/523316041217",
     juvenil: "https://wa.me/523314194601",
     flag: "https://wa.me/525561898846",
-    general: "https://wa.me/523341042448",
+    general: WHATSAPP_GENERAL,
   },
   social: {
     facebook: "https://www.facebook.com/CarnerosFootball",
@@ -18,7 +20,7 @@ export const CONTACTS = {
   },
   organization: {
     name: "Carneros Football Club Guadalajara",
-    shortName: "Carneros FC",
+    shortName: "Carneros",
     legalName: "Deporte y Cultura la Floresta",
     founded: "1985",
     tagline: "Disciplina, trabajo en equipo y superación",
