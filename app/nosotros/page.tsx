@@ -134,21 +134,34 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      <section className="bg-secondary py-16 text-secondary-foreground md:py-20">
-        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <Prose className="prose-invert prose-headings:text-secondary-foreground prose-p:text-secondary-foreground/80 prose-strong:text-accent">
-            <h2>¿Qué es FADEMAC?</h2>
-            <p>
-              FADEMAC significa <strong>Fútbol Americano del Estado de México</strong>, una de las
-              ligas más reconocidas en México, dedicada a promover y organizar competencias de
-              football americano en diferentes categorías. Estar en la{" "}
-              <strong>División 1 de FADEMAC</strong> significa que Carneros compite al más alto
-              nivel en la liga, enfrentándose a equipos de gran tradición y talento en el país. La
-              liga es conocida por su alto nivel de competencia y por contribuir al desarrollo del
-              football americano en México, brindando una plataforma sólida para jóvenes atletas que
-              aspiran a llegar a niveles profesionales.
-            </p>
-          </Prose>
+      <section className="relative overflow-hidden bg-gradient-to-br from-secondary via-secondary to-primary/20 py-16 text-white md:py-20">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-[radial-gradient(circle_at_20%_0%,rgba(255,255,255,0.06),transparent_60%)]"
+        />
+        <div className="container relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-white/70">Liga</p>
+          <h2 className="relative pl-5 font-display text-3xl font-bold uppercase tracking-tight text-white md:text-4xl">
+            <span className="absolute left-0 top-1 h-[calc(100%-0.5rem)] w-1 rounded bg-white" />
+            ¿Qué es{" "}
+            <span className="inline-block rounded bg-white px-2 py-0.5 text-brand-blue">
+              FADEMAC
+            </span>
+            ?
+          </h2>
+          <p className="mt-5 text-base leading-relaxed text-white/90 md:text-lg">
+            FADEMAC significa{" "}
+            <strong className="font-semibold text-white">
+              Fútbol Americano del Estado de México
+            </strong>
+            , una de las ligas más reconocidas en México, dedicada a promover y organizar
+            competencias de football americano en diferentes categorías. Estar en la{" "}
+            <strong className="font-semibold text-white">División 1 de FADEMAC</strong> significa
+            que Carneros compite al más alto nivel en la liga, enfrentándose a equipos de gran
+            tradición y talento en el país. La liga es conocida por su alto nivel de competencia y
+            por contribuir al desarrollo del football americano en México, brindando una plataforma
+            sólida para jóvenes atletas que aspiran a llegar a niveles profesionales.
+          </p>
         </div>
       </section>
 

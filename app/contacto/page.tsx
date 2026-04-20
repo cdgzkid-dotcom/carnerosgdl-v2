@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import type { ComponentType, SVGProps } from "react";
-import { MessageCircle, MapPin } from "lucide-react";
+import { MessageCircle, MapPin, Navigation } from "lucide-react";
 import { PageHero } from "@/components/shared/PageHero";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { FacebookIcon, InstagramIcon, TikTokIcon } from "@/components/shared/SocialIcons";
-import { CONTACTS, WHATSAPP_GENERAL } from "@/lib/contacts";
+import { CONTACTS, WHATSAPP_GENERAL, TRAINING_LOCATION } from "@/lib/contacts";
 import { HERO_IMAGES } from "@/lib/categories";
 
 type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
@@ -118,29 +118,37 @@ export default function ContactoPage() {
             description="Nuestras instalaciones se encuentran en la zona metropolitana de Guadalajara."
           />
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-            <div className="rounded-xl bg-card p-6 shadow-md ring-1 ring-border lg:col-span-1">
+            <div className="flex flex-col gap-4 rounded-xl bg-card p-6 shadow-md ring-1 ring-border lg:col-span-1">
               <div className="flex items-start gap-3">
                 <MapPin className="mt-1 h-6 w-6 shrink-0 text-primary" />
                 <div>
                   <h3 className="font-display text-lg font-semibold uppercase tracking-wide">
-                    Organización Carneros
+                    {TRAINING_LOCATION.name}
                   </h3>
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    Zona Metropolitana de Guadalajara
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    {CONTACTS.location.municipality}, {CONTACTS.location.state}
-                  </p>
-                  <p className="mt-3 text-xs italic text-muted-foreground">
-                    Para dirección exacta de entrenamientos, contáctanos por WhatsApp.
+                  <p className="mt-1 text-sm text-muted-foreground">{TRAINING_LOCATION.address}</p>
+                  <p className="text-xs text-muted-foreground">
+                    {TRAINING_LOCATION.coords.lat.toFixed(4)},{" "}
+                    {TRAINING_LOCATION.coords.lng.toFixed(4)}
                   </p>
                 </div>
               </div>
+              <a
+                href={TRAINING_LOCATION.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-3 text-sm font-semibold uppercase tracking-wide text-primary-foreground shadow transition-all hover:scale-[1.02] hover:bg-primary/90"
+              >
+                <Navigation className="h-4 w-4" />
+                Cómo llegar
+              </a>
+              <p className="text-xs italic text-muted-foreground">
+                Al abrir desde tu celular, Google Maps te ofrecerá navegación directa.
+              </p>
             </div>
             <div className="aspect-video overflow-hidden rounded-xl shadow-md ring-1 ring-border lg:col-span-2">
               <iframe
-                title="Ubicación Carneros en Guadalajara"
-                src="https://www.google.com/maps?q=Zapopan+Jalisco&output=embed"
+                title="Ubicación Organización Carneros en Zapopan, Jalisco"
+                src={`https://www.google.com/maps?q=${TRAINING_LOCATION.coords.lat},${TRAINING_LOCATION.coords.lng}&output=embed`}
                 className="h-full w-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

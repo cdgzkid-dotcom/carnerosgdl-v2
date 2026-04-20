@@ -1,5 +1,12 @@
 export const WHATSAPP_GENERAL = "https://wa.me/523341042448";
 
+export const TRAINING_LOCATION = {
+  url: "https://maps.app.goo.gl/4NPwZ1yqdFXMTHyE6",
+  coords: { lat: 20.7070141, lng: -103.4691664 },
+  name: "Organización Carneros",
+  address: "Zapopan, Jalisco",
+} as const;
+
 export const CONTACTS = {
   whatsapp: {
     americano: "https://wa.me/523316041217",
