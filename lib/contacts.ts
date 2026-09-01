@@ -9,9 +9,9 @@ export const TRAINING_LOCATION = {
 
 export const CONTACTS = {
   whatsapp: {
-    americano: "https://wa.me/523316041217",
-    juvenil: "https://wa.me/523314194601",
-    flag: "https://wa.me/525561898846",
+    americano: "https://wa.me/523316712729",
+    juvenil: "https://wa.me/523316712729",
+    flag: "https://wa.me/523311854735",
     general: WHATSAPP_GENERAL,
   },
   social: {
