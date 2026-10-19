@@ -3,7 +3,6 @@ import { Hero } from "@/components/home/Hero";
 import { StatsCounter } from "@/components/home/StatsCounter";
 import { ProgramSection } from "@/components/home/ProgramSection";
 import { CategoriesGrid } from "@/components/home/CategoriesGrid";
-import { ContactSection } from "@/components/home/ContactSection";
 import {
   AMERICANO_CATEGORIES,
   FLAG_CATEGORIES,
@@ -67,8 +66,6 @@ export default function HomePage() {
         categories={FLAG_CATEGORIES}
         bgClass="bg-background"
       />
-
-      <ContactSection />
     </>
   );
 }
