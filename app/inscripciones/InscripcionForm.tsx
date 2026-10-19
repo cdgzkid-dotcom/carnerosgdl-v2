@@ -65,8 +65,8 @@ export function InscripcionForm() {
           ¡Inscripción recibida!
         </h2>
         <p className="mt-3 text-muted-foreground">
-          Gracias por registrar a tu jugador. Un coordinador te contactará por WhatsApp o correo
-          dentro de las próximas 48 horas para confirmar detalles y darte la bienvenida a Carneros.
+          Gracias por registrar a tu jugador. Un coordinador te contactará por correo dentro de las
+          próximas 48 horas para confirmar detalles y darte la bienvenida a Carneros.
         </p>
         <button
           type="button"

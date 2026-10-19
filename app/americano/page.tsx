@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/shared/PageHero";
 import { CategoriesGrid } from "@/components/home/CategoriesGrid";
 import { ProgramSection } from "@/components/home/ProgramSection";
-import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
 import { AMERICANO_CATEGORIES, HERO_IMAGES, JUVENIL_UNICA } from "@/lib/categories";
-import { CONTACTS } from "@/lib/contacts";
 
 export const metadata: Metadata = {
   title: "Football Americano",
@@ -35,9 +33,6 @@ export default function AmericanoPage() {
             la disciplina, el trabajo en equipo y el liderazgo. Cada jugador crece en un entorno
             competitivo y de camaradería, impulsado por los valores de esfuerzo y superación.
           </p>
-          <div className="mt-8 flex justify-center">
-            <WhatsAppButton href={CONTACTS.whatsapp.americano} label="Contactar coordinación" />
-          </div>
         </div>
       </section>
 
@@ -56,8 +51,6 @@ export default function AmericanoPage() {
         description={JUVENIL_UNICA.description}
         image={JUVENIL_UNICA.image}
         imageAlt="Equipo Juvenil Única de Carneros"
-        whatsapp={JUVENIL_UNICA.whatsapp}
-        whatsappLabel="Contactar Juvenil Única"
         reverse
       />
     </>

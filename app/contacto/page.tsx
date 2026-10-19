@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import type { ComponentType, SVGProps } from "react";
-import { MessageCircle, MapPin, Navigation } from "lucide-react";
+import { MapPin, Navigation } from "lucide-react";
 import { PageHero } from "@/components/shared/PageHero";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { FacebookIcon, InstagramIcon, TikTokIcon } from "@/components/shared/SocialIcons";
-import { CONTACTS, WHATSAPP_GENERAL, TRAINING_LOCATION } from "@/lib/contacts";
+import { CONTACTS, TRAINING_LOCATION } from "@/lib/contacts";
 import { HERO_IMAGES } from "@/lib/categories";
 
 type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
@@ -12,7 +12,7 @@ type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
 export const metadata: Metadata = {
   title: "Contacto",
   description:
-    "Contacta a Carneros Football Club Guadalajara. WhatsApp general, redes sociales y ubicación en Zapopan, Jalisco.",
+    "Contacta a Carneros Football Club Guadalajara. Redes sociales y ubicación en Zapopan, Jalisco.",
 };
 
 const SOCIALS: {
@@ -46,38 +46,11 @@ export default function ContactoPage() {
     <>
       <PageHero
         title="Contacto"
-        subtitle="Escríbenos por WhatsApp o síguenos en redes sociales — te respondemos directo."
+        subtitle="Síguenos en redes sociales y conoce dónde entrenamos."
         image={HERO_IMAGES.nosotros}
         imageAlt="Organización Carneros — contacto"
         height="sm"
       />
-
-      <section className="py-16 md:py-20">
-        <div className="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <SectionTitle
-            eyebrow="WhatsApp"
-            title="Escríbenos directo"
-            description="Te respondemos personalmente durante horas hábiles."
-            align="center"
-          />
-          <a
-            href={WHATSAPP_GENERAL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group mx-auto flex max-w-xl items-center justify-center gap-4 rounded-2xl bg-[#25D366] px-8 py-6 text-white shadow-lg transition-all hover:scale-[1.02] hover:shadow-xl"
-          >
-            <MessageCircle className="h-10 w-10" />
-            <div className="flex flex-col items-start">
-              <span className="text-xs font-semibold uppercase tracking-widest text-white/85">
-                Atención general
-              </span>
-              <span className="font-display text-3xl font-bold uppercase tracking-wide">
-                +52 33 4104 2448
-              </span>
-            </div>
-          </a>
-        </div>
-      </section>
 
       <section className="bg-muted/30 py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

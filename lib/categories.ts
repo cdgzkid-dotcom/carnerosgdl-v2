@@ -1,5 +1,3 @@
-import { CONTACTS } from "./contacts";
-
 export type Program = "americano" | "flag";
 
 export interface Category {
@@ -8,7 +6,6 @@ export interface Category {
   ageRange: string;
   description: string;
   image: string;
-  whatsapp: string;
   program: Program;
 }
 
@@ -20,7 +17,6 @@ export const AMERICANO_CATEGORIES: Category[] = [
     description:
       "En esta categoría, los niños aprenden las bases del fútbol americano mientras disfrutan de un ambiente de diversión y desarrollo.",
     image: "https://framerusercontent.com/images/eCH6Fb9F2cZoijGXSh6o1EpnWA.jpg",
-    whatsapp: CONTACTS.whatsapp.americano,
     program: "americano",
   },
   {
@@ -30,7 +26,6 @@ export const AMERICANO_CATEGORIES: Category[] = [
     description:
       "Los jugadores comienzan a perfeccionar sus habilidades motrices y tácticas, con un enfoque en el trabajo en equipo.",
     image: "https://framerusercontent.com/images/Vl35KgIUvUcfTuQ26kpWxDBjktQ.jpg",
-    whatsapp: CONTACTS.whatsapp.americano,
     program: "americano",
   },
   {
@@ -40,7 +35,6 @@ export const AMERICANO_CATEGORIES: Category[] = [
     description:
       "A esta edad, los jugadores consolidan fundamentos y aprenden estrategias más avanzadas del juego.",
     image: "https://framerusercontent.com/images/e1tnxhfu6O9z1CvkUhXnnw3NYA.jpg",
-    whatsapp: CONTACTS.whatsapp.americano,
     program: "americano",
   },
   {
@@ -50,7 +44,6 @@ export const AMERICANO_CATEGORIES: Category[] = [
     description:
       "En esta categoría, se fortalece la disciplina táctica y física, preparando a los jugadores para una mayor competencia.",
     image: "https://framerusercontent.com/images/GFqsCLyfeTsyezeIv5023z4rF0.jpg",
-    whatsapp: CONTACTS.whatsapp.americano,
     program: "americano",
   },
   {
@@ -60,7 +53,6 @@ export const AMERICANO_CATEGORIES: Category[] = [
     description:
       "Los jugadores se enfocan en perfeccionar su preparación física y táctica para enfrentar competencias más exigentes.",
     image: "https://framerusercontent.com/images/iKXwt3amH8cOGj1q4H7cc6KduHM.jpg",
-    whatsapp: CONTACTS.whatsapp.americano,
     program: "americano",
   },
   {
@@ -70,7 +62,6 @@ export const AMERICANO_CATEGORIES: Category[] = [
     description:
       "La categoría más avanzada del club, donde los jugadores se preparan para dar el salto a niveles superiores de fútbol americano.",
     image: "https://framerusercontent.com/images/dFaUMgfNVW2kBV3lrS4ucCmUCc.jpg",
-    whatsapp: CONTACTS.whatsapp.americano,
     program: "americano",
   },
 ];
@@ -83,7 +74,6 @@ export const FLAG_CATEGORIES: Category[] = [
     description:
       "Los más pequeños aprenden los fundamentos básicos de flag football de manera divertida.",
     image: "https://framerusercontent.com/images/Ko2ZBqpvcdv0a2XcmDdJnWaJQYk.jpeg",
-    whatsapp: CONTACTS.whatsapp.flag,
     program: "flag",
   },
   {
@@ -93,7 +83,6 @@ export const FLAG_CATEGORIES: Category[] = [
     description:
       "Se enfocan en la agilidad y el trabajo en equipo, aprendiendo las reglas básicas del juego.",
     image: "https://framerusercontent.com/images/qnmBpoO6jzaaAVrgYd2S2XOGGc.jpeg",
-    whatsapp: CONTACTS.whatsapp.flag,
     program: "flag",
   },
   {
@@ -102,7 +91,6 @@ export const FLAG_CATEGORIES: Category[] = [
     ageRange: "9-10 años",
     description: "Mejoran sus habilidades tácticas y físicas, aprendiendo jugadas simples.",
     image: "https://framerusercontent.com/images/bzG7NQCR0wRc7BexfhvWi0ZGvY.jpeg",
-    whatsapp: CONTACTS.whatsapp.flag,
     program: "flag",
   },
   {
@@ -111,7 +99,6 @@ export const FLAG_CATEGORIES: Category[] = [
     ageRange: "11-12 años",
     description: "Desarrollan velocidad y coordinación, compitiendo en torneos locales.",
     image: "https://framerusercontent.com/images/ASN0WvUYkpoN34EAXmTUuDbWRxw.jpeg",
-    whatsapp: CONTACTS.whatsapp.flag,
     program: "flag",
   },
   {
@@ -120,7 +107,6 @@ export const FLAG_CATEGORIES: Category[] = [
     ageRange: "13-14 años",
     description: "Refuerzan la disciplina táctica y se preparan para niveles más competitivos.",
     image: "https://framerusercontent.com/images/GC8NQsit8qcg1ahAD77cm1lEEw.jpeg",
-    whatsapp: CONTACTS.whatsapp.flag,
     program: "flag",
   },
   {
@@ -130,7 +116,6 @@ export const FLAG_CATEGORIES: Category[] = [
     description:
       "Perfeccionan su técnica y toman decisiones rápidas, compitiendo a nivel avanzado.",
     image: "https://framerusercontent.com/images/UU4orLYc3LOWH1EJJSKS9gd1sCk.jpg",
-    whatsapp: CONTACTS.whatsapp.flag,
     program: "flag",
   },
 ];
@@ -141,7 +126,6 @@ export const JUVENIL_UNICA = {
   description:
     "Los jugadores perfeccionan sus habilidades físicas y tácticas para competir a un nivel avanzado, enfocándose en la disciplina, el liderazgo y la toma de decisiones rápidas.",
   image: "https://framerusercontent.com/images/NtNC8xJTS2cDCIgTTEJEOy5EQ.jpg",
-  whatsapp: CONTACTS.whatsapp.juvenil,
 };
 
 export const HERO_IMAGES = {

@@ -1,5 +1,3 @@
-export const WHATSAPP_GENERAL = "https://wa.me/523341042448";
-
 export const TRAINING_LOCATION = {
   url: "https://maps.app.goo.gl/4NPwZ1yqdFXMTHyE6",
   coords: { lat: 20.7070141, lng: -103.4691664 },
@@ -8,12 +6,6 @@ export const TRAINING_LOCATION = {
 } as const;
 
 export const CONTACTS = {
-  whatsapp: {
-    americano: "https://wa.me/523316712729",
-    juvenil: "https://wa.me/523316712729",
-    flag: "https://wa.me/523311854735",
-    general: WHATSAPP_GENERAL,
-  },
   social: {
     facebook: "https://www.facebook.com/CarnerosFootball",
     instagram: "https://www.instagram.com/carnerosfootball/",
@@ -34,5 +26,4 @@ export const CONTACTS = {
   },
 } as const;
 
-export type WhatsAppKey = keyof typeof CONTACTS.whatsapp;
 export type SocialKey = keyof typeof CONTACTS.social;

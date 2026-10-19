@@ -2,8 +2,7 @@
 
 import type { ComponentType, SVGProps } from "react";
 import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
-import { CONTACTS, WHATSAPP_GENERAL } from "@/lib/contacts";
+import { CONTACTS } from "@/lib/contacts";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { FacebookIcon, InstagramIcon, TikTokIcon } from "@/components/shared/SocialIcons";
 
@@ -47,34 +46,10 @@ export function ContactSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           eyebrow="Contacto"
-          title="Síguenos y contáctanos"
-          description="Escríbenos directo por WhatsApp o síguenos en redes sociales para partidos, entrenamientos y novedades del club."
+          title="Síguenos en redes"
+          description="Síguenos en redes sociales para partidos, entrenamientos y novedades del club."
           align="center"
         />
-
-        {/* Botón principal de WhatsApp — el único */}
-        <div className="mx-auto max-w-xl">
-          <motion.a
-            href={WHATSAPP_GENERAL}
-            target="_blank"
-            rel="noopener noreferrer"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            whileHover={{ scale: 1.02 }}
-            className="group flex items-center justify-center gap-3 rounded-xl bg-[#25D366] px-8 py-5 text-center text-white shadow-lg transition-all hover:shadow-xl"
-          >
-            <MessageCircle className="h-7 w-7" />
-            <div className="flex flex-col items-start">
-              <span className="text-xs font-semibold uppercase tracking-widest text-white/80">
-                Escríbenos por WhatsApp
-              </span>
-              <span className="font-display text-2xl font-bold uppercase tracking-wide">
-                +52 33 4104 2448
-              </span>
-            </div>
-          </motion.a>
-        </div>
 
         <div className="mx-auto mt-12 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3">
           {SOCIALS.map((s, i) => (

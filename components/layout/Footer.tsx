@@ -91,16 +91,6 @@ export function Footer() {
           <h3 className="font-display text-lg font-semibold uppercase tracking-wider">Contacto</h3>
           <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
             <li>
-              <a
-                href={CONTACTS.whatsapp.general}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-primary"
-              >
-                WhatsApp: +52 33 4104 2448
-              </a>
-            </li>
-            <li>
               <Link href="/inscripciones" className="transition-colors hover:text-primary">
                 Inscríbete
               </Link>

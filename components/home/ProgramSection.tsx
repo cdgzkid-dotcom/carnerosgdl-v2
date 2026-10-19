@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
 
 interface ProgramSectionProps {
   id: string;
@@ -12,8 +11,6 @@ interface ProgramSectionProps {
   description: string;
   image: string;
   imageAlt: string;
-  whatsapp: string;
-  whatsappLabel?: string;
   reverse?: boolean;
   children?: React.ReactNode;
 }
@@ -25,8 +22,6 @@ export function ProgramSection({
   description,
   image,
   imageAlt,
-  whatsapp,
-  whatsappLabel = "Contáctanos por WhatsApp",
   reverse = false,
   children,
 }: ProgramSectionProps) {
@@ -74,9 +69,6 @@ export function ProgramSection({
               {description}
             </p>
             {children}
-            <div className="mt-8">
-              <WhatsAppButton href={whatsapp} label={whatsappLabel} />
-            </div>
           </motion.div>
         </div>
       </div>

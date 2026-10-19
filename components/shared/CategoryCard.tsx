@@ -52,14 +52,6 @@ export function CategoryCard({ category, index }: CategoryCardProps) {
         <p className="text-shadow-card text-sm leading-relaxed text-white/95">
           {category.description}
         </p>
-        <a
-          href={category.whatsapp}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-2 inline-flex w-fit items-center gap-2 rounded-md bg-[#25D366] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-md transition-all hover:bg-[#1fb057]"
-        >
-          Contactar por WhatsApp
-        </a>
       </div>
     </motion.article>
   );

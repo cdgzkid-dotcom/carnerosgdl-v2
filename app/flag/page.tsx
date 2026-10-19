@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/shared/PageHero";
 import { CategoriesGrid } from "@/components/home/CategoriesGrid";
-import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
 import { FLAG_CATEGORIES, HERO_IMAGES } from "@/lib/categories";
-import { CONTACTS } from "@/lib/contacts";
 
 export const metadata: Metadata = {
   title: "Flag Football",
@@ -35,9 +33,6 @@ export default function FlagPage() {
             trabajo en equipo, la agilidad y el respeto, impulsando el crecimiento personal a través
             del deporte.
           </p>
-          <div className="mt-8 flex justify-center">
-            <WhatsAppButton href={CONTACTS.whatsapp.flag} label="Contactar coordinación Flag" />
-          </div>
         </div>
       </section>
 

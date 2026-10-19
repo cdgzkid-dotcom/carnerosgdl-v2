@@ -10,7 +10,6 @@ import {
   HERO_IMAGES,
   JUVENIL_UNICA,
 } from "@/lib/categories";
-import { CONTACTS } from "@/lib/contacts";
 
 export const metadata: Metadata = {
   title: "Inicio",
@@ -31,7 +30,6 @@ export default function HomePage() {
         description="El fútbol americano en Carneros Football Club es una experiencia formativa que fomenta la disciplina, el trabajo en equipo y el liderazgo. Cada jugador crece en un entorno competitivo y de camaradería, impulsado por los valores de esfuerzo y superación."
         image={HERO_IMAGES.americano}
         imageAlt="Jugadores de football americano de Carneros en el campo"
-        whatsapp={CONTACTS.whatsapp.americano}
       />
 
       <CategoriesGrid
@@ -49,7 +47,6 @@ export default function HomePage() {
         description={JUVENIL_UNICA.description}
         image={JUVENIL_UNICA.image}
         imageAlt="Equipo Juvenil Única de Carneros"
-        whatsapp={JUVENIL_UNICA.whatsapp}
         reverse
       />
 
@@ -60,7 +57,6 @@ export default function HomePage() {
         description="El flag en Carneros Football Club ofrece un entorno divertido y competitivo donde los jugadores desarrollan habilidades físicas y estratégicas sin contacto. Fomenta el trabajo en equipo, la agilidad y el respeto, impulsando el crecimiento personal a través del deporte."
         image={HERO_IMAGES.flag}
         imageAlt="Jugadores de flag football de Carneros en acción"
-        whatsapp={CONTACTS.whatsapp.flag}
       />
 
       <CategoriesGrid
