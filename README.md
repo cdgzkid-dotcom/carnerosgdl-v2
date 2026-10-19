@@ -21,7 +21,6 @@ en Next.js 14 para reemplazar la anterior en Framer.
 - **Animaciones:** [Framer Motion](https://www.framer.com/motion/) + react-countup
 - **CMS / DB:** [Supabase](https://supabase.com) (PostgreSQL + Auth)
 - **Formularios:** React Hook Form + [Zod](https://zod.dev)
-- **Email:** [Resend](https://resend.com)
 - **SEO:** next-seo built-in, sitemap + robots, JSON-LD, RSS
 - **Analytics:** Vercel Analytics + GA4 (opcional)
 - **Deploy:** [Vercel](https://vercel.com)
@@ -34,7 +33,6 @@ en Next.js 14 para reemplazar la anterior en Framer.
 - Node.js **20 o superior**
 - pnpm **10 o superior** (`npm i -g pnpm`)
 - Cuenta de Supabase (gratis)
-- Cuenta de Resend (gratis, opcional — para emails)
 
 ---
 
@@ -73,17 +71,13 @@ Abre [http://localhost:3000](http://localhost:3000).
 
 Copia `.env.local.example` a `.env.local` y llena los siguientes campos:
 
-| Variable                        | Requerido | Descripción                                 |
-| ------------------------------- | --------- | ------------------------------------------- |
-| `NEXT_PUBLIC_SITE_URL`          | Sí        | URL pública del sitio                       |
-| `NEXT_PUBLIC_SUPABASE_URL`      | Sí        | URL del proyecto Supabase                   |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Sí        | Llave anónima (frontend)                    |
-| `SUPABASE_SERVICE_ROLE_KEY`     | Sí        | Llave service role (API routes, admin)      |
-| `RESEND_API_KEY`                | No        | Para envío de emails transaccionales        |
-| `RESEND_FROM_EMAIL`             | No        | Remitente de los correos                    |
-| `RESEND_NOTIFY_EMAIL`           | No        | Email del admin para notificaciones         |
-| `NEXT_PUBLIC_GA_ID`             | No        | ID de Google Analytics 4                    |
-| `ADMIN_WEBHOOK_URL`             | No        | Webhook para notificar nuevas inscripciones |
+| Variable                        | Requerido | Descripción                            |
+| ------------------------------- | --------- | -------------------------------------- |
+| `NEXT_PUBLIC_SITE_URL`          | Sí        | URL pública del sitio                  |
+| `NEXT_PUBLIC_SUPABASE_URL`      | Sí        | URL del proyecto Supabase              |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Sí        | Llave anónima (frontend)               |
+| `SUPABASE_SERVICE_ROLE_KEY`     | Sí        | Llave service role (API routes, admin) |
+| `NEXT_PUBLIC_GA_ID`             | No        | ID de Google Analytics 4               |
 
 ---
 
@@ -116,11 +110,8 @@ carnerosgdl-v2/
 │   ├── flag/page.tsx           # Detalle flag football
 │   ├── calendario/             # Calendario de partidos (Supabase)
 │   ├── noticias/               # Blog (lista + [slug])
-│   ├── inscripciones/          # Formulario
-│   ├── contacto/page.tsx       # Contacto y redes
 │   ├── galeria/                # Galería con lightbox
 │   ├── api/
-│   │   ├── registrations/      # POST — guarda inscripción + email
 │   │   └── revalidate/         # POST — revalidar paths on-demand
 │   ├── feed.xml/               # RSS
 │   ├── sitemap.ts              # Sitemap dinámico

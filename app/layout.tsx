@@ -83,7 +83,6 @@ const jsonLd = {
   foundingDate: CONTACTS.organization.founded,
   url: siteUrl,
   logo: `${siteUrl}/images/logos/logo-mark.png`,
-  sameAs: [CONTACTS.social.facebook, CONTACTS.social.instagram, CONTACTS.social.tiktok],
   address: {
     "@type": "PostalAddress",
     addressLocality: CONTACTS.location.city,

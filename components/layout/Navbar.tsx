@@ -20,7 +20,6 @@ const LINKS: NavLink[] = [
   { href: "/nosotros", label: "Nosotros" },
   { href: "/calendario", label: "Calendario" },
   { href: "/noticias", label: "Noticias" },
-  { href: "/contacto", label: "Contacto" },
 ];
 
 export function Navbar() {
@@ -79,12 +78,6 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center gap-2">
-          <Link
-            href="/inscripciones"
-            className="hidden rounded-md bg-accent px-4 py-2 text-sm font-semibold uppercase tracking-wide text-accent-foreground shadow-sm transition-all hover:scale-105 hover:bg-accent/90 sm:inline-flex"
-          >
-            Inscríbete
-          </Link>
           <ThemeToggle />
           <button
             type="button"
@@ -118,14 +111,6 @@ export function Navbar() {
                   </Link>
                 </li>
               ))}
-              <li className="pt-2">
-                <Link
-                  href="/inscripciones"
-                  className="block rounded-md bg-accent px-4 py-2 text-center text-sm font-semibold uppercase tracking-wide text-accent-foreground"
-                >
-                  Inscríbete
-                </Link>
-              </li>
             </ul>
           </motion.div>
         )}

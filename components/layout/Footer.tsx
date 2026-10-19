@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FacebookIcon, InstagramIcon, TikTokIcon } from "@/components/shared/SocialIcons";
 import { CONTACTS } from "@/lib/contacts";
 
 const QUICK_LINKS = [
@@ -11,8 +10,6 @@ const QUICK_LINKS = [
   { href: "/calendario", label: "Calendario" },
   { href: "/noticias", label: "Noticias" },
   { href: "/galeria", label: "Galería" },
-  { href: "/inscripciones", label: "Inscripciones" },
-  { href: "/contacto", label: "Contacto" },
 ];
 
 export function Footer() {
@@ -38,35 +35,6 @@ export function Footer() {
             {CONTACTS.organization.tagline}. Formando atletas y líderes desde{" "}
             {CONTACTS.organization.founded} en Guadalajara.
           </p>
-          <div className="mt-6 flex items-center gap-3">
-            <a
-              href={CONTACTS.social.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook Carneros"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-muted transition-colors hover:bg-primary hover:text-primary-foreground"
-            >
-              <FacebookIcon className="h-5 w-5" />
-            </a>
-            <a
-              href={CONTACTS.social.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram Carneros"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-muted transition-colors hover:bg-primary hover:text-primary-foreground"
-            >
-              <InstagramIcon className="h-5 w-5" />
-            </a>
-            <a
-              href={CONTACTS.social.tiktok}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="TikTok Carneros"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-muted transition-colors hover:bg-primary hover:text-primary-foreground"
-            >
-              <TikTokIcon className="h-5 w-5" />
-            </a>
-          </div>
         </div>
 
         <div>
@@ -88,13 +56,8 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="font-display text-lg font-semibold uppercase tracking-wider">Contacto</h3>
+          <h3 className="font-display text-lg font-semibold uppercase tracking-wider">Ubicación</h3>
           <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-            <li>
-              <Link href="/inscripciones" className="transition-colors hover:text-primary">
-                Inscríbete
-              </Link>
-            </li>
             <li>
               <span>
                 {CONTACTS.location.city}, {CONTACTS.location.state}
